@@ -1,0 +1,36 @@
+<!-- activity_edit_work_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditWorkItemActivity">
+
+    <EditText
+        android:id="@+id/editTextWorkItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter updated work item"
+        android:inputType="text"
+        android:maxLines="3" />
+    <Button
+        android:id="@+id/buttonSelectDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWorkItem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Select Date and Time" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSelectDateTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Save Changes" />
+
+
+
+</RelativeLayout>

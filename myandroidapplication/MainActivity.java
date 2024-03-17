@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.ktx.Firebase;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button Logout;
     private CardView notescardview,worklistcardview,filecardview,previousworkcardview,calendarcardview,mapcardview,ratecardview,entertainmentcardview;
