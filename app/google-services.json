@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423021449196",
+    "project_id": "myandroidapplication-faa4e",
+    "storage_bucket": "myandroidapplication-faa4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423021449196:android:4e39008c580dc34d00fac9",
+        "android_client_info": {
+          "package_name": "com.example.myandroidapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDky9wTtqy7qftdtt778bfITu7Uj0ZK4QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

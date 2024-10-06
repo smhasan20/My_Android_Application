@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="0" />
+
+    <EditText
+        android:id="@+id/reviewEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginTop="16dp"
+        android:hint="Write your review here" />
+
+    <ImageView
+        android:id="@+id/likeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewEditText"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/like"
+        android:contentDescription="Like"
+        android:adjustViewBounds="true"
+       android:maxHeight="48dp"
+       android:maxWidth="48dp"
+    />
+
+    <ImageView
+        android:id="@+id/dislikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likeButton"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/dislike"
+        android:contentDescription="Dislike"
+        android:adjustViewBounds="true"
+        android:maxHeight="48dp"
+        android:maxWidth="48dp"/>
+
+    <Button
+        android:id="@+id/submitRatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dislikeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+
+    <!-- TextViews to display rating counts -->
+    <TextView
+        android:id="@+id/rating1CountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitRatingButton"
+        android:layout_marginTop="16dp"
+        android:text="Rating 1: 0 person(s)" />
+
+    <TextView
+        android:id="@+id/rating2CountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating1CountTextView"
+        android:layout_marginTop="8dp"
+        android:text="Rating 2: 0 person(s)" />
+
+    <TextView
+        android:id="@+id/rating3CountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating2CountTextView"
+        android:layout_marginTop="8dp"
+        android:text="Rating 3: 0 person(s)" />
+
+    <TextView
+        android:id="@+id/rating4CountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating3CountTextView"
+        android:layout_marginTop="8dp"
+        android:text="Rating 4: 0 person(s)" />
+
+    <TextView
+        android:id="@+id/rating5CountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating4CountTextView"
+        android:layout_marginTop="8dp"
+        android:text="Rating 5: 0 person(s)" />
+
+
+    <TextView
+        android:id="@+id/likeCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating5CountTextView"
+        android:layout_marginTop="16dp"
+        android:text="Likes: 0" />
+
+    <TextView
+        android:id="@+id/dislikeCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likeCountTextView"
+        android:layout_marginTop="8dp"
+        android:text="Dislikes: 0" />
+
+</RelativeLayout>
